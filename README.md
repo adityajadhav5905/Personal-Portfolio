@@ -2,8 +2,8 @@
 
 A clean, responsive, and modern personal portfolio website built to showcase my skills and projects.
 
-<img width="1920" height="1080" alt="Screenshot 2025-08-09 194901" src="https://github.com/user-attachments/assets/6b380b19-2e90-488b-9d94-e1d4b2f7012f" />
 <img width="1920" height="1080" alt="Screenshot 2025-08-09 194825" src="https://github.com/user-attachments/assets/a3319c0b-0171-4c15-8eca-d704c4b00159" />
+
 
 ## 🚀 Live Demo
 
