@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-1.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Aditya Jadhav</h1>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:richard@example.com" class="contact-link">adityajadhav5905@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12133522795" class="contact-link">+91 886246490</a>
+            </div>
+          </li>
+
+        </ul>
+        <a href="./assets/resume.pdf" download class="form-btn">
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Download Resume (PDF)</span>
+        </a>
+        <ul class="social-list">
+          <!-- GitHub -->
+          <li class="social-item">
+            <a href="https://github.com/adityajadhav5905" target="_blank" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 98 96">
+                <path fill="currentColor" d="M49 .5C21.9.5-.1 22.4-.1 49.5c0 21.7 14 40.1 33.5 46.6c2.5.5 3.4-1.1 3.4-2.4c0-1.2-.1-5.2-.1-9.4
+          c-13.6 3-16.4-5.8-16.4-5.8c-2.2-5.6-5.4-7.1-5.4-7.1c-4.4-3 .3-3 .3-3c4.8.3 7.4 5 7.4 5
+          c4.3 7.4 11.3 5.3 14.1 4c.4-3.1 1.7-5.3 3-6.5
+          c-10.8-1.2-22.1-5.4-22.1-24.2c0-5.4 1.9-9.8 5-13.2
+          c-.5-1.2-2.2-6 .5-12.5c0 0 4.1-1.3 13.5 5
+          c3.9-1.1 8.1-1.7 12.3-1.7s8.4.6 12.3 1.7
+          c9.3-6.3 13.5-5 13.5-5c2.7 6.5 1 11.3.5 12.5
+          c3.1 3.4 5 7.8 5 13.2c0 18.9-11.3 23-22.1 24.2
+          c1.8 1.5 3.4 4.4 3.4 8.8c0 6.3-.1 11.4-.1 12.9
+          c0 1.3.9 2.9 3.4 2.4c19.5-6.5 33.5-24.9 33.5-46.6
+          C98.1 22.4 76.1.5 49 .5z" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- LinkedIn -->
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/adityajadhav5905/" target="_blank" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
+                <path fill="#0A66C2"
+                  d="M100.28 448H7.4V148.9h92.88zm-46.44-339.5C24.9 108.5 0 83.6 0 53.3 0 23 24.9-2 54.3-2c29.4 0 54.3 25 54.3 55.3 0 30.3-24.9 55.2-54.3 55.2zM447.9 448h-92.4V306.4c0-33.7-.7-77-47-77-47 0-54.2 36.8-54.2 74.9V448H161.8V148.9h88.7v40.8h1.3c12.4-23.6 42.7-48.5 87.9-48.5 94 0 111.3 61.9 111.3 142.3V448z" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- LeetCode -->
+          <li class="social-item">
+            <a href="https://leetcode.com/u/adityajadhav5905/" target="_blank" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                <path fill="#FFA116" d="M128 0L0 128l128 128l35.3-35.3L70.6 128L163.3 35.3L128 0z" />
+                <path fill="#000" d="M163.3 35.3L128 70.6l57.4 57.4l-57.4 57.4l35.3 35.3L256 128L163.3 35.3z" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- CodeChef -->
+          <li class="social-item">
+            <a href="https://www.codechef.com/users/aditya5905" target="_blank" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                <circle cx="128" cy="128" r="128" fill="#6A1B9A" />
+                <text x="50%" y="55%" font-size="72" text-anchor="middle" fill="#fff" font-family="Arial">CC</text>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <section class="about-section">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+
+          <p>
+            I am <strong>Aditya Jadhav</strong>, an <strong>Electronics and Telecommunication</strong> engineering
+            student at <strong>Pune Institute of Computer Technology, Pune</strong> with a strong passion for full-stack
+            development. My projects showcase my expertise in the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), as
+            well as my skills in data analysis and visualization using Python libraries like Pandas and Folium. I am a
+            problem-solver who enjoys building interactive and innovative applications, from a real estate platform to a
+            pollution monitoring device with a heatmap visualization. As an NTSE Scholar, I am driven to excel and apply
+            my technical abilities to create impactful solutions.
+          </p>
+        </section>
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+                <p class="service-item-text">
+                  Crafting modern, interactive, and fully responsive user interfaces with ReactJS and Tailwind CSS to
+                  ensure a seamless user experience on all devices.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Building robust, secure, and scalable server-side applications using Node.js, Express.js, and MongoDB.
+                  I create efficient RESTful APIs to power your web application's core logic.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Structures & Algorithms</h4>
+                <p class="service-item-text">
+                  Applying a strong foundation in data structures and algorithms to solve complex problems and write
+                  clean, efficient, and scalable code.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+                <p class="service-item-text">
+                  Leveraging machine learning algorithms to transform complex datasets into actionable insights.
+                  Experienced in building and evaluating models for prediction, classification, and data analysis.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="resume-section">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SCTR's Pune Institute of Computer Technology (PICT) , Pune</h4>
+              <span>2023 — 2027</span>
+              <p class="timeline-text">CGPA : 8.815</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Vidyamandir Junior College , Miraj</h4>
+              <span>2021 — 2023</span>
+              <p class="timeline-text">HSC Percentage : 72.83 %</p>
+              <p class="timeline-text">NTSE State Rank : 17 [Eligible for National Scolership]</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Deshbhakt Nathaji Lad Highschool , Sangli</h4>
+              <span>2020 — 2021</span>
+              <p class="timeline-text">SSC Percentage : 98.40 %</p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Projects</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Real-Estate</h4>
+              <span>March 2025 — June 2025</span>
+              <p class="timeline-text">A full-stack real estate platform developed using the MERN stack, allowing users
+                to effortlessly list, browse, and search for properties. The application features secure user
+                authentication for managing listings and advanced search filters for a seamless user experience.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Portable Pollution Monitoring</h4>
+              <span>2013 — 2015</span>
+              <p class="timeline-text">An IoT-based device designed to capture hyper-local air quality data on the go.
+                It integrates multiple sensors to measure key pollutants like Particulate Matter (PM2.5) and Carbon
+                Monoxide (CO), transmitting the data in real-time along with GPS coordinates. This information is
+                visualized on a web dashboard as an interactive heatmap, allowing for the clear identification of
+                pollution hotspots.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Personal Portfolio Website</h4>
+              <span>2010 — 2013</span>
+              <p class="timeline-text">Crafted a visually engaging and fully responsive personal portfolio website from
+                scratch using only pure HTML5 and CSS3. This project showcases a strong command of front-end
+                fundamentals, utilizing modern CSS techniques like Flexbox and Grid to create a clean, professional
+                layout. With a focus on semantic markup and optimized assets, the result is a lightweight, fast-loading
+                site that effectively presents my projects and skills on any device.</p>
+            </li>
+          </ol>
+        </section>
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <div class="skills-list content-card skill-marquee">
+            <div class="marquee-outer">
+              <div class="marquee-grid">
+                <div class="tech-box" data-skill="React"><img src="./assets/images/skills/React.svg" alt="React"></div>
+                <div class="tech-box" data-skill="Node.js"><img src="./assets/images/skills/Node.js.svg" alt="Node.js">
+                </div>
+                <div class="tech-box" data-skill="HTML5"><img src="./assets/images/skills/HTML5.svg" alt="HTML5"></div>
+                <div class="tech-box" data-skill="Python"><img src="./assets/images/skills/Python.svg" alt="Python">
+                </div>
+                <div class="tech-box" data-skill="Bootstrap"><img src="./assets/images/skills/Bootstrap.svg"
+                    alt="Bootstrap"></div>
+                <div class="tech-box" data-skill="CSS3"><img src="./assets/images/skills/CSS3.svg" alt="CSS3"></div>
+                <div class="tech-box" data-skill="JavaScript"><img src="./assets/images/skills/JavaScript.svg"
+                    alt="JavaScript"></div>
+                <div class="tech-box" data-skill="Next.js"><img src="./assets/images/skills/Next.js.svg" alt="Next.js">
+                </div>
+                <div class="tech-box" data-skill="MySQL"><img src="./assets/images/skills/MySQL.svg" alt="MySQL"></div>
+                <div class="tech-box" data-skill="Git"><img src="./assets/images/skills/Git.svg" alt="Git"></div>
+                <div class="tech-box" data-skill="TypeScript"><img src="./assets/images/skills/TypeScript.svg"
+                    alt="TypeScript"></div>
+                <div class="tech-box" data-skill="Jupyter"><img src="./assets/images/skills/Jupyter.svg" alt="Jupyter">
+                </div>
+                <div class="tech-box" data-skill="VS Code"><img
+                    src="./assets/images/skills/Visual Studio Code (VS Code).svg" alt="VS Code"></div>
+                <div class="tech-box" data-skill="C"><img src="./assets/images/skills/C.svg" alt="C"></div>
+                <div class="tech-box" data-skill="C++"><img src="./assets/images/skills/C++ (CPlusPlus).svg" alt="C++">
+                </div>
+                <div class="tech-box" data-skill="Arduino"><img src="./assets/images/skills/Arduino.svg" alt="Arduino">
+                </div>
+                <div class="tech-box" data-skill="Nodemon"><img src="./assets/images/skills/Nodemon.svg" alt="Nodemon">
+                </div>
+                <div class="tech-box" data-skill="MongoDB"><img src="./assets/images/skills/MongoDB.svg" alt="MongoDB">
+                </div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="tech-box" data-skill="React"><img src="./assets/images/skills/React.svg" alt="React"></div>
+                <div class="tech-box" data-skill="Node.js"><img src="./assets/images/skills/Node.js.svg" alt="Node.js">
+                </div>
+                <div class="tech-box" data-skill="HTML5"><img src="./assets/images/skills/HTML5.svg" alt="HTML5"></div>
+                <div class="tech-box" data-skill="Python"><img src="./assets/images/skills/Python.svg" alt="Python">
+                </div>
+                <div class="tech-box" data-skill="Bootstrap"><img src="./assets/images/skills/Bootstrap.svg"
+                    alt="Bootstrap"></div>
+                <div class="tech-box" data-skill="CSS3"><img src="./assets/images/skills/CSS3.svg" alt="CSS3"></div>
+                <div class="tech-box" data-skill="JavaScript"><img src="./assets/images/skills/JavaScript.svg"
+                    alt="JavaScript"></div>
+                <div class="tech-box" data-skill="Next.js"><img src="./assets/images/skills/Next.js.svg" alt="Next.js">
+                </div>
+                <div class="tech-box" data-skill="MySQL"><img src="./assets/images/skills/MySQL.svg" alt="MySQL"></div>
+                <div class="tech-box" data-skill="Git"><img src="./assets/images/skills/Git.svg" alt="Git"></div>
+                <div class="tech-box" data-skill="TypeScript"><img src="./assets/images/skills/TypeScript.svg"
+                    alt="TypeScript"></div>
+                <div class="tech-box" data-skill="Jupyter"><img src="./assets/images/skills/Jupyter.svg" alt="Jupyter">
+                </div>
+                <div class="tech-box" data-skill="VS Code"><img
+                    src="./assets/images/skills/Visual Studio Code (VS Code).svg" alt="VS Code"></div>
+                <div class="tech-box" data-skill="C"><img src="./assets/images/skills/C.svg" alt="C"></div>
+                <div class="tech-box" data-skill="C++"><img src="./assets/images/skills/C++ (CPlusPlus).svg" alt="C++">
+                </div>
+                <div class="tech-box" data-skill="Arduino"><img src="./assets/images/skills/Arduino.svg" alt="Arduino">
+                </div>
+                <div class="tech-box" data-skill="Nodemon"><img src="./assets/images/skills/Nodemon.svg" alt="Nodemon">
+                </div>
+                <div class="tech-box" data-skill="MongoDB"><img src="./assets/images/skills/MongoDB.svg" alt="MongoDB">
+                </div>
+                <!-- Duplicate again for truly continuous scroll -->
+                <div class="tech-box" data-skill="React"><img src="./assets/images/skills/React.svg" alt="React"></div>
+                <div class="tech-box" data-skill="Node.js"><img src="./assets/images/skills/Node.js.svg" alt="Node.js">
+                </div>
+                <div class="tech-box" data-skill="HTML5"><img src="./assets/images/skills/HTML5.svg" alt="HTML5"></div>
+                <div class="tech-box" data-skill="Python"><img src="./assets/images/skills/Python.svg" alt="Python">
+                </div>
+                <div class="tech-box" data-skill="Bootstrap"><img src="./assets/images/skills/Bootstrap.svg"
+                    alt="Bootstrap"></div>
+                <div class="tech-box" data-skill="CSS3"><img src="./assets/images/skills/CSS3.svg" alt="CSS3"></div>
+                <div class="tech-box" data-skill="JavaScript"><img src="./assets/images/skills/JavaScript.svg"
+                    alt="JavaScript"></div>
+                <div class="tech-box" data-skill="Next.js"><img src="./assets/images/skills/Next.js.svg" alt="Next.js">
+                </div>
+                <div class="tech-box" data-skill="MySQL"><img src="./assets/images/skills/MySQL.svg" alt="MySQL"></div>
+                <div class="tech-box" data-skill="Git"><img src="./assets/images/skills/Git.svg" alt="Git"></div>
+                <div class="tech-box" data-skill="TypeScript"><img src="./assets/images/skills/TypeScript.svg"
+                    alt="TypeScript"></div>
+                <div class="tech-box" data-skill="Jupyter"><img src="./assets/images/skills/Jupyter.svg" alt="Jupyter">
+                </div>
+                <div class="tech-box" data-skill="VS Code"><img
+                    src="./assets/images/skills/Visual Studio Code (VS Code).svg" alt="VS Code"></div>
+                <div class="tech-box" data-skill="C"><img src="./assets/images/skills/C.svg" alt="C"></div>
+                <div class="tech-box" data-skill="C++"><img src="./assets/images/skills/C++ (CPlusPlus).svg" alt="C++">
+                </div>
+                <div class="tech-box" data-skill="Arduino"><img src="./assets/images/skills/Arduino.svg" alt="Arduino">
+                </div>
+                <div class="tech-box" data-skill="Nodemon"><img src="./assets/images/skills/Nodemon.svg" alt="Nodemon">
+                </div>
+                <div class="tech-box" data-skill="MongoDB"><img src="./assets/images/skills/MongoDB.svg" alt="MongoDB">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-section">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="project-list">
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/adityajadhav5905/real-estate-listings" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon href="https://github.com/adityajadhav5905" name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Real Estate</h3>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p class="project-category">Full-Stack Developement</p>
+                    <a href="https://github.com/adityajadhav5905/real-estate-listings" style="align-items:end ;" target="_blank"
+                      class="social-link" title="GitHub">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                    </a>
+                  </div>
+                </a>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/adityajadhav5905/real-estate-listings" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon href="https://github.com/adityajadhav5905" name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-5.jpg" alt="finance" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Personal Portfolio</h3>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p class="project-category">HTML & CSS</p>
+                    <a href="https://github.com/adityajadhav5905/real-estate-listings" style="align-items:end ;" target="_blank"
+                      class="social-link" title="GitHub">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                    </a>
+                  </div>
+                </a>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-2.jpg" alt="IoT" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Portable Pollution Monitoring</h3>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p class="project-category">IoT & Data Visualization</p>
+                    <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" style="align-items:end ;" target="_blank"
+                      class="social-link" title="GitHub">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                    </a>
+                  </div>
+                </a>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/adityajadhav5905/Amazon-Clone" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-3.jpg" alt="IoT" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Amazon Clone</h3>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p class="project-category">HTML & CSS</p>
+                    <a href="https://github.com/adityajadhav5905/Amazon-Clone" style="align-items:end ;" target="_blank"
+                      class="social-link" title="GitHub">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                    </a>
+                  </div>
+                </a>
+                </a>
+              </li>
+
+
+            </ul>
+          </section>
+        </section>
+
+        <section class="contact-section">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="https://formspree.io/f/xanbanvj" target="_blank" method="POST" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="Name" class="form-input" placeholder="Full name" required>
+                <input type="email" name="Email" class="form-input" placeholder="Email address" required>
+              </div>
+
+              <textarea name="Message" class="form-input" placeholder="Your Message" required></textarea>
+
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/skills-marquee.js"></script>
+</body>
+
+</html>
