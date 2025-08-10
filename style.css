@@ -1430,13 +1430,11 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
-
-
-
   .project-img,
   .blog-banner-box {
     height: auto;
   }
+  
 
 }
 
@@ -1446,9 +1444,6 @@ textarea.form-input::-webkit-resizer {
 
 
 @media (min-width: 580px) {
-
-
-
   :root {
 
 
@@ -1674,20 +1669,6 @@ textarea.form-input::-webkit-resizer {
     flex-grow: 1;
     width: 35px;
   }
-
-
-
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
-
-  .clients-item {
-    min-width: calc(33.33% - 35px);
-  }
-
 
 
 
