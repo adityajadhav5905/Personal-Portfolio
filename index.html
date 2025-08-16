@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  <!-- Default Styles (for desktop first approach) -->
+  <link rel="stylesheet" href="styles2.css" media="screen and (max-width: 1255px)">
+  <link rel="stylesheet" href="style.css" media="screen and (min-width: 1256px)">
+
 </head>
 
 <body>
@@ -19,19 +21,19 @@
 
     <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-1.jpg" alt="Richard hanrick" width="80">
-        </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Aditya Jadhav</h1>
-        </div>
+      <figure class="avatar-box">
+        <img src="./assets/images/avatar-1.jpg" alt="Richard hanrick" width="80">
+      </figure>
 
-        
 
+      <div class="info-content">
+        <h1 class="name" title="Richard hanrick">Aditya Jadhav</h1>
       </div>
+
+
+
 
       <div class="sidebar-info_more">
 
@@ -46,7 +48,10 @@
               <a href="mailto:richard@example.com" class="contact-link">adityajadhav5905@gmail.com</a>
             </div>
           </li>
+        </ul>
 
+
+        <ul class="contacts-list">
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -56,18 +61,19 @@
               <a href="tel:+12133522795" class="contact-link">+91 886246490</a>
             </div>
           </li>
-
         </ul>
-        <a href="./assets/resume.pdf" download class="form-btn">
-          <ion-icon name="download-outline"></ion-icon>
-          <span>Download Resume (PDF)</span>
-        </a>
-        <ul class="social-list">
-          <!-- GitHub -->
-          <li class="social-item">
-            <a href="https://github.com/adityajadhav5905" target="_blank" class="social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 98 96">
-                <path fill="currentColor" d="M49 .5C21.9.5-.1 22.4-.1 49.5c0 21.7 14 40.1 33.5 46.6c2.5.5 3.4-1.1 3.4-2.4c0-1.2-.1-5.2-.1-9.4
+      </div>
+
+      <a href="./assets/resume.pdf" download class="form-btn">
+        <ion-icon name="download-outline"></ion-icon>
+        <span>Download Resume (PDF)</span>
+      </a>
+      <ul class="social-list">
+        <!-- GitHub -->
+        <li class="social-item">
+          <a href="https://github.com/adityajadhav5905" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 98 96">
+              <path fill="currentColor" d="M49 .5C21.9.5-.1 22.4-.1 49.5c0 21.7 14 40.1 33.5 46.6c2.5.5 3.4-1.1 3.4-2.4c0-1.2-.1-5.2-.1-9.4
           c-13.6 3-16.4-5.8-16.4-5.8c-2.2-5.6-5.4-7.1-5.4-7.1c-4.4-3 .3-3 .3-3c4.8.3 7.4 5 7.4 5
           c4.3 7.4 11.3 5.3 14.1 4c.4-3.1 1.7-5.3 3-6.5
           c-10.8-1.2-22.1-5.4-22.1-24.2c0-5.4 1.9-9.8 5-13.2
@@ -78,44 +84,43 @@
           c1.8 1.5 3.4 4.4 3.4 8.8c0 6.3-.1 11.4-.1 12.9
           c0 1.3.9 2.9 3.4 2.4c19.5-6.5 33.5-24.9 33.5-46.6
           C98.1 22.4 76.1.5 49 .5z" />
-              </svg>
-            </a>
-          </li>
+            </svg>
+          </a>
+        </li>
 
-          <!-- LinkedIn -->
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/adityajadhav5905/" target="_blank" class="social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
-                <path fill="#0A66C2"
-                  d="M100.28 448H7.4V148.9h92.88zm-46.44-339.5C24.9 108.5 0 83.6 0 53.3 0 23 24.9-2 54.3-2c29.4 0 54.3 25 54.3 55.3 0 30.3-24.9 55.2-54.3 55.2zM447.9 448h-92.4V306.4c0-33.7-.7-77-47-77-47 0-54.2 36.8-54.2 74.9V448H161.8V148.9h88.7v40.8h1.3c12.4-23.6 42.7-48.5 87.9-48.5 94 0 111.3 61.9 111.3 142.3V448z" />
-              </svg>
-            </a>
-          </li>
+        <!-- LinkedIn -->
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/adityajadhav5905/" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
+              <path fill="#0A66C2"
+                d="M100.28 448H7.4V148.9h92.88zm-46.44-339.5C24.9 108.5 0 83.6 0 53.3 0 23 24.9-2 54.3-2c29.4 0 54.3 25 54.3 55.3 0 30.3-24.9 55.2-54.3 55.2zM447.9 448h-92.4V306.4c0-33.7-.7-77-47-77-47 0-54.2 36.8-54.2 74.9V448H161.8V148.9h88.7v40.8h1.3c12.4-23.6 42.7-48.5 87.9-48.5 94 0 111.3 61.9 111.3 142.3V448z" />
+            </svg>
+          </a>
+        </li>
 
-          <!-- LeetCode -->
-          <li class="social-item">
-            <a href="https://leetcode.com/u/adityajadhav5905/" target="_blank" class="social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
-                <path fill="#FFA116" d="M128 0L0 128l128 128l35.3-35.3L70.6 128L163.3 35.3L128 0z" />
-                <path fill="#000" d="M163.3 35.3L128 70.6l57.4 57.4l-57.4 57.4l35.3 35.3L256 128L163.3 35.3z" />
-              </svg>
-            </a>
-          </li>
+        <!-- LeetCode -->
+        <li class="social-item">
+          <a href="https://leetcode.com/u/adityajadhav5905/" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+              <path fill="#FFA116" d="M128 0L0 128l128 128l35.3-35.3L70.6 128L163.3 35.3L128 0z" />
+              <path fill="#000" d="M163.3 35.3L128 70.6l57.4 57.4l-57.4 57.4l35.3 35.3L256 128L163.3 35.3z" />
+            </svg>
+          </a>
+        </li>
 
-          <!-- CodeChef -->
-          <li class="social-item">
-            <a href="https://www.codechef.com/users/aditya5905" target="_blank" class="social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
-                <circle cx="128" cy="128" r="128" fill="#6A1B9A" />
-                <text x="50%" y="55%" font-size="72" text-anchor="middle" fill="#fff" font-family="Arial">CC</text>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <!-- CodeChef -->
+        <li class="social-item">
+          <a href="https://www.codechef.com/users/aditya5905" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+              <circle cx="128" cy="128" r="128" fill="#6A1B9A" />
+              <text x="50%" y="55%" font-size="72" text-anchor="middle" fill="#fff" font-family="Arial">CC</text>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
 
 
-      </div>
 
     </aside>
 
@@ -138,7 +143,7 @@
           </p>
         </section>
         <section class="service">
-          <h3 class="h3 service-title">What I'm doing</h3>
+          <h3 class="h2 article-title">What I'm doing</h3>
           <ul class="service-list">
             <li class="service-item">
               <div class="service-icon-box">
@@ -258,7 +263,7 @@
           </ol>
         </section>
         <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 article-title">My skills</h3>
           <div class="skills-list content-card skill-marquee">
             <div class="marquee-outer">
               <div class="marquee-grid">
@@ -376,8 +381,8 @@
                   <h3 class="project-title">Real Estate</h3>
                   <div style="display: flex; justify-content: space-between; align-items: center;">
                     <p class="project-category">Full-Stack Developement</p>
-                    <a href="https://github.com/adityajadhav5905/real-estate-listings" style="align-items:end ;" target="_blank"
-                      class="social-link" title="GitHub">
+                    <a href="https://github.com/adityajadhav5905/real-estate-listings" style="align-items:end ;"
+                      target="_blank" class="social-link" title="GitHub">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                           d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -391,15 +396,16 @@
                 <a href="https://github.com/adityajadhav5905/Personal-Portfolio" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
-                      <ion-icon href="https://github.com/adityajadhav5905/Personal-Portfolio" name="eye-outline"></ion-icon>
+                      <ion-icon href="https://github.com/adityajadhav5905/Personal-Portfolio"
+                        name="eye-outline"></ion-icon>
                     </div>
                     <img src="./assets/images/project-5.jpg" alt="finance" loading="lazy">
                   </figure>
                   <h3 class="project-title">Personal Portfolio</h3>
                   <div style="display: flex; justify-content: space-between; align-items: center;">
                     <p class="project-category">HTML & CSS</p>
-                    <a href="https://github.com/adityajadhav5905/Personal-Portfolio" style="align-items:end ;" target="_blank"
-                      class="social-link" title="GitHub">
+                    <a href="https://github.com/adityajadhav5905/Personal-Portfolio" style="align-items:end ;"
+                      target="_blank" class="social-link" title="GitHub">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                           d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -420,8 +426,8 @@
                   <h3 class="project-title">Portable Pollution Monitoring</h3>
                   <div style="display: flex; justify-content: space-between; align-items: center;">
                     <p class="project-category">IoT & Data Visualization</p>
-                    <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" style="align-items:end ;" target="_blank"
-                      class="social-link" title="GitHub">
+                    <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" style="align-items:end ;"
+                      target="_blank" class="social-link" title="GitHub">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                           d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -484,11 +490,8 @@
     </div>
 
   </main>
-
-  <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/skills-marquee.js"></script>
 </body>
 
 </html>
