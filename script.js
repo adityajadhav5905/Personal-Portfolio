@@ -422,9 +422,8 @@ function initHeroTypewriter() {
   if (!el) return;
 
   const roles = [
-    'Full-Stack Developer (MERN)',
-    'Data Analyst & ML Explorer',
-    'PICT Pune | NTSE Scholar',
+    'Full-Stack Developer',
+    'Data Analyst',
     'Software Engineer'
   ];
 
@@ -613,15 +612,15 @@ function initScrollStack(lenis) {
   if (!scrollArea || !N) return;
 
   // ── Tuning ──────────────────────────────────────────────────────────────
-  const STACK_PEEK_PX   = 14;    // px each buried card peeks below — small enough to stay below header
-  const ENTRY_FRACTION  = 0.55;  // fraction of a card's scroll window used for entry
+  const STACK_PEEK_PX = 14;    // px each buried card peeks below — small enough to stay below header
+  const ENTRY_FRACTION = 0.55;  // fraction of a card's scroll window used for entry
   const SCALE_PER_DEPTH = 0.04;  // scale reduction per card stacked above
-  const ENTRY_START_VH  = 1.08;  // how many viewports below card starts
+  const ENTRY_START_VH = 1.08;  // how many viewports below card starts
 
   // Assign z-indices and prepare will-change once
   cards.forEach((card, i) => {
-    card.style.zIndex         = String(i + 1);
-    card.style.willChange     = 'transform';
+    card.style.zIndex = String(i + 1);
+    card.style.willChange = 'transform';
     card.style.transformOrigin = 'top center';
     card.style.backfaceVisibility = 'hidden';
   });
@@ -637,10 +636,10 @@ function initScrollStack(lenis) {
 
   // ── Core render function — receives smooth scroll Y ─────────────────────
   function render(scrollY) {
-    const vh      = window.innerHeight;
+    const vh = window.innerHeight;
     // getBoundingClientRect().top is relative to viewport top, convert to doc coords
-    const areaTop  = scrollArea.getBoundingClientRect().top + scrollY;
-    const areaH    = scrollArea.offsetHeight;
+    const areaTop = scrollArea.getBoundingClientRect().top + scrollY;
+    const areaH = scrollArea.offsetHeight;
 
     // 0 = area top at viewport top; 1 = area bottom at viewport bottom
     const prog = clamp((scrollY - areaTop) / (areaH - vh), 0, 1);
@@ -650,8 +649,8 @@ function initScrollStack(lenis) {
     // 1. Compute eased entry progress for each card
     for (let i = 0; i < N; i++) {
       const winStart = i * step;
-      const winEnd   = winStart + step * ENTRY_FRACTION;
-      entryProg[i]   = easeOutCubic(clamp((prog - winStart) / (winEnd - winStart), 0, 1));
+      const winEnd = winStart + step * ENTRY_FRACTION;
+      entryProg[i] = easeOutCubic(clamp((prog - winStart) / (winEnd - winStart), 0, 1));
     }
 
     // 2. Apply transforms
