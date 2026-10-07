@@ -1,1424 +1,1035 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Jadhav | Full-Stack Developer &amp; Data Analyst</title>
-    <meta
-      name="description"
-      content="Portfolio of Aditya Jadhav — Full-Stack Developer (MERN Stack) and Data Analyst from PICT Pune. NTSE Scholar building web applications and analytical solutions."
-    />
-    <meta
-      name="keywords"
-      content="Aditya Jadhav, Portfolio, PICT Pune, Full Stack Developer, MERN Stack, Data Analyst, Machine Learning, React, Three.js, Python, Software Engineer"
-    />
-    <meta name="author" content="Aditya Jadhav" />
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.svg"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Jadhav | Full-Stack Developer &amp; Data Analyst</title>
+  <meta name="description"
+    content="Portfolio of Aditya Jadhav — Full-Stack Developer (MERN Stack) and Data Analyst from PICT Pune. NTSE Scholar building web applications and analytical solutions." />
+  <meta name="keywords"
+    content="Aditya Jadhav, Portfolio, PICT Pune, Full Stack Developer, MERN Stack, Data Analyst, Machine Learning, React, Three.js, Python, Software Engineer" />
+  <meta name="author" content="Aditya Jadhav" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
 
-    <!-- GSAP & ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Lenis Smooth Scroll -->
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    <!-- Three.js 3D WebGL Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
 
-    <!-- IonIcons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
+  <!-- Three.js 3D WebGL Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-  <body>
-    <!-- Film Grain Noise Texture Overlay -->
-    <div class="noise-overlay"></div>
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
 
-    <!-- Top Scroll Progress Line -->
-    <div class="scroll-progress-bar"></div>
+<body>
+  <!-- Film Grain Noise Texture Overlay -->
+  <div class="noise-overlay"></div>
 
-    <!-- Three.js Dyson Sphere 3D Background Canvas -->
-    <canvas id="webgl-canvas"></canvas>
+  <!-- Top Scroll Progress Line -->
+  <div class="scroll-progress-bar"></div>
 
-    <!-- Studio Header Navigation -->
-    <header class="studio-header">
-      <div class="nav-container">
-        <a href="#hero" class="brand-logo-link">
-          <div class="brand-core-dot"></div>
-          <span>Aditya Jadhav</span>
+  <!-- Three.js Dyson Sphere 3D Background Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Studio Header Navigation -->
+  <header class="studio-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo-link">
+        <div class="brand-core-dot"></div>
+        <span>Aditya Jadhav</span>
+      </a>
+
+      <ul class="studio-nav-menu">
+        <li><a href="#hero" class="nav-link-item active">Overview</a></li>
+        <li><a href="#education" class="nav-link-item">Education</a></li>
+        <li>
+          <a href="#capabilities" class="nav-link-item">Capabilities</a>
+        </li>
+        <li><a href="#skills" class="nav-link-item">Skills</a></li>
+        <li><a href="#projects" class="nav-link-item">Projects</a></li>
+        <li><a href="#contact" class="nav-link-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions-wrap">
+        <a href="./assets/Aditya Jadhav Resume.pdf" download class="btn-nav-resume">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <span><strong>Resume</strong></span>
         </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <ul class="studio-nav-menu">
-          <li><a href="#hero" class="nav-link-item active">Overview</a></li>
-          <li><a href="#education" class="nav-link-item">Education</a></li>
-          <li>
-            <a href="#capabilities" class="nav-link-item">Capabilities</a>
-          </li>
-          <li><a href="#skills" class="nav-link-item">Skills</a></li>
-          <li><a href="#projects" class="nav-link-item">Projects</a></li>
-          <li><a href="#contact" class="nav-link-item">Contact</a></li>
-        </ul>
+  <main>
+    <!-- ==================== 1. HERO / LANDING SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-editorial-layout">
+          <!-- Text Details -->
+          <div class="hero-text-column">
+            <!-- Massive Dominant Name Headline -->
+            <h1 class="hero-name-headline">
+              <span class="mask-line"><span class="mask-inner">ADITYA</span></span>
+              <span class="mask-line"><span class="mask-inner text-white-glow">JADHAV</span></span>
+            </h1>
 
-        <div class="nav-actions-wrap">
-          <a
-            href="./assets/Aditya Jadhav Resume.pdf"
-            download
-            class="btn-nav-resume"
-          >
-            <ion-icon name="document-text-outline"></ion-icon>
-            <span><strong>Resume</strong></span>
-          </a>
-          <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+            <div class="hero-typewriter-wrapper">
+              <span class="typewriter-text"></span>
+              <span class="typewriter-cursor-bar"></span>
+            </div>
+
+            <p class="hero-summary-paragraph">
+              I am <strong>Aditya Jadhav</strong>, an
+              <strong>Electronics &amp; Telecommunication</strong> engineering
+              student at <strong>PICT, Pune. </strong>Specialized in building
+              modern <strong>MERN stack</strong> web platforms and
+              <strong>Data Analytics</strong> solutions.
+            </p>
+
+            <!-- Direct Contact Beacons (In Landing) -->
+            <div class="hero-comms-dock">
+              <a href="mailto:adityajadhav.pict@gmail.com" class="comm-beacon-card" title="Send Email">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>adityajadhav.pict@gmail.com</span>
+              </a>
+              <a href="tel:+918862046490" class="comm-beacon-card" title="Call">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>+91 8862046490</span>
+              </a>
+              <div class="comm-beacon-card" style="cursor: default">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Pune, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <!-- Highly Prominent Resume CTA & Action Buttons -->
+            <div class="hero-cta-strip">
+              <a href="./assets/Aditya Jadhav Resume.pdf" download class="btn-prominent-resume">
+                <ion-icon name="document-text-outline" style="font-size: 1.25rem"></ion-icon>
+                <span><strong>Download Resume</strong></span>
+              </a>
+              <a href="#projects" class="btn-hero-hollow">
+                <span>View Projects</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#contact" class="btn-hero-hollow">
+                <span>Get in Touch</span>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-social-row">
+              <a href="https://github.com/adityajadhav5905" target="_blank" rel="noopener noreferrer"
+                class="social-circle-link" title="GitHub">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/adityajadhav5905/" target="_blank" rel="noopener noreferrer"
+                class="social-circle-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="https://leetcode.com/u/adityajadhav5905/" target="_blank" rel="noopener noreferrer"
+                class="social-circle-link" title="LeetCode">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.795l3.774-4.04 4.908-5.253a1.378 1.378 0 0 0-.974-2.339zm3.896 9.873a1.38 1.38 0 0 0-.97 2.355l2.67 2.67-2.67 2.67a1.38 1.38 0 1 0 1.952 1.952l3.647-3.647a1.38 1.38 0 0 0 0-1.952L18.35 10.27a1.375 1.375 0 0 0-.971-.397z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Full Size Character SVG Column with Interactive Purple Halo Canvas -->
+          <div class="hero-avatar-svg-column">
+            <div class="hero-avatar-svg-wrapper" id="hero-avatar-wrapper">
+              <div class="purple-halo-glow"></div>
+              <canvas id="purple-halo-canvas" class="purple-halo-canvas"></canvas>
+              <img src="./assets/images/avatar1.svg" alt="Aditya Jadhav" class="hero-avatar-svg-img"
+                id="hero-avatar-img" loading="eager" />
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- ==================== 1. HERO / LANDING SECTION ==================== -->
-      <section class="hero-section" id="hero">
-        <div class="container">
-          <div class="hero-editorial-layout">
-            <!-- Text Details -->
-            <div class="hero-text-column">
-              <!-- Massive Dominant Name Headline -->
-              <h1 class="hero-name-headline">
-                <span class="mask-line"
-                  ><span class="mask-inner">ADITYA</span></span
-                >
-                <span class="mask-line"
-                  ><span class="mask-inner text-white-glow">JADHAV</span></span
-                >
-              </h1>
+    <!-- ==================== 2. EDUCATION SECTION (SERIAL VERTICAL TIMELINE) ==================== -->
+    <section class="education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index-tag"><strong>Academic Pedigree</strong></span>
+          <h2 class="section-title">
+            Education</h2>
+          <p class="section-subtitle">
+            Academic degrees, coursework, and competitive national scholarship
+            honors.
+          </p>
+        </div>
 
-              <div class="hero-typewriter-wrapper">
-                <span class="typewriter-text"></span>
-                <span class="typewriter-cursor-bar"></span>
+        <div class="education-timeline-vertical">
+          <!-- 1. BE PICT Pune -->
+          <div class="edu-timeline-item">
+            <div class="edu-node-bullet"></div>
+            <div class="dyson-card edu-item-card">
+              <div class="edu-item-header">
+                <span class="edu-level-tag">Bachelor of Engineering</span>
+                <span class="edu-time-range">2023 — 2027</span>
               </div>
+              <h3 class="edu-degree-title">
+                B.E. in Electronics &amp; Telecommunication
+              </h3>
+              <div class="edu-school-name">
+                SCTR's Pune Institute of Computer Technology (PICT), Pune
+              </div>
+              <div class="edu-score-pill">
+                <ion-icon name="ribbon-outline"></ion-icon>
+                <span>CGPA : <strong>8.56</strong></span>
+              </div>
+              <ul class="edu-highlights-list">
+                <li>
+                  Core Coursework: Data Structures &amp; Algorithms, Database
+                  Management Systems, Computer Networks, Operating Systems,
+                  Digital Signal Processing.
+                </li>
+                <li>
+                  Actively building full-stack platforms, backtesting
+                  simulations, and geospatial data analytics tools.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-              <p class="hero-summary-paragraph">
-                I am <strong>Aditya Jadhav</strong>, an
-                <strong>Electronics &amp; Telecommunication</strong> engineering
-                student at <strong>PICT, Pune. </strong>Specialized in building
-                modern <strong>MERN stack</strong> web platforms and
-                <strong>Data Analytics</strong> solutions.
-              </p>
+          <!-- 2. HSC 12th Vidyamandir -->
+          <div class="edu-timeline-item">
+            <div class="edu-node-bullet"></div>
+            <div class="dyson-card edu-item-card">
+              <div class="edu-item-header">
+                <span class="edu-level-tag">Higher Secondary Certificate (HSC)</span>
+                <span class="edu-time-range">2021 — 2023</span>
+              </div>
+              <h3 class="edu-degree-title">
+                Vidyamandir Junior College, Miraj
+              </h3>
+              <div class="edu-school-name">
+                Maharashtra State Board of Secondary and Higher Secondary
+                Education
+              </div>
+              <div class="edu-score-pill">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>HSC Percentage : <strong>72.83 %</strong></span>
+              </div>
+              <ul class="edu-highlights-list">
+                <li>
+                  Science Stream specializing in Physics, Chemistry, and
+                  Advanced Mathematics.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-              <!-- Direct Contact Beacons (In Landing) -->
-              <div class="hero-comms-dock">
-                <a
-                  href="mailto:adityajadhav.pict@gmail.com"
-                  class="comm-beacon-card"
-                  title="Send Email"
-                >
-                  <ion-icon name="mail-outline"></ion-icon>
-                  <span>adityajadhav.pict@gmail.com</span>
-                </a>
-                <a
-                  href="tel:+918862046490"
-                  class="comm-beacon-card"
-                  title="Call"
-                >
-                  <ion-icon name="call-outline"></ion-icon>
-                  <span>+91 8862046490</span>
-                </a>
-                <div class="comm-beacon-card" style="cursor: default">
-                  <ion-icon name="location-outline"></ion-icon>
-                  <span>Pune, Maharashtra, India</span>
+          <!-- 3. SSC 10th & NTSE Scholar Combined -->
+          <div class="edu-timeline-item">
+            <div class="edu-node-bullet"></div>
+            <div class="dyson-card edu-item-card">
+              <div class="edu-item-header">
+                <span class="edu-level-tag">Secondary School Certificate (SSC) &amp; NTSE Scholar</span>
+                <span class="edu-time-range">2020 — 2021</span>
+              </div>
+              <h3 class="edu-degree-title">
+                Deshbhakt Nathaji Lad Highschool, Sangli
+              </h3>
+              <div class="edu-school-name">
+                Maharashtra State Board · National Talent Search Examination
+                (NCERT)
+              </div>
+              <div class="edu-score-pill">
+                <ion-icon name="trophy-outline"></ion-icon>
+                <span>SSC Score : <strong>98.40 %</strong> · NTSE State Rank :
+                  <strong>17</strong> [Eligible for National
+                  Scholarship]</span>
+              </div>
+              <ul class="edu-highlights-list">
+                <li>
+                  Awarded the prestigious National Talent Search (NTSE)
+                  Scholarship by NCERT, Government of India.
+                </li>
+                <li>
+                  Achieved 17th rank across Maharashtra state in NTSE with
+                  distinction performance in secondary state board
+                  examination.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. CORE CAPABILITIES (STACKED CARDS DECK) ==================== -->
+    <section class="capabilities-section" id="capabilities">
+      <!-- Scroll area provides the scroll distance; sticky container pins the deck -->
+      <div class="caps-scroll-area" id="caps-scroll-area">
+        <div class="caps-sticky-container">
+          <!-- Title stays pinned while cards stack -->
+          <div class="caps-sticky-header">
+            <span class="section-index-tag">02 // Core Competencies</span>
+            <h2 class="section-title">
+              Core <span class="text-white-glow">Capabilities</span>
+            </h2>
+            <p class="section-subtitle">
+              Technical focus areas spanning full-stack development,
+              algorithmic computation, and analytical systems.
+            </p>
+          </div>
+
+          <div class="caps-deck" id="caps-deck">
+            <!-- Card 1: Frontend -->
+            <div class="stacked-capability-card" data-card-index="0">
+              <div class="stacked-card-inner">
+                <div class="stacked-card-header">
+                  <span class="stacked-card-num">01 // UI &amp; INTERACTION</span>
+                  <div class="stacked-card-icon-wrap">
+                    <img src="./assets/images/icon-dev.svg" alt="Frontend" />
+                  </div>
+                </div>
+                <div class="stacked-card-content">
+                  <h3 class="stacked-card-title">
+                    Frontend Developement
+                  </h3>
+                  <p class="stacked-card-text">
+                    Crafting modern, responsive, and performance-tuned user
+                    interfaces with React.js, Next.js, and Tailwind CSS.
+                    Implementing micro-interactions, fluid layouts, and state
+                    management for seamless digital experiences.
+                  </p>
+                  <div class="stacked-tech-tags">
+                    <span class="stacked-tag">React.js</span>
+                    <span class="stacked-tag">Next.js</span>
+                    <span class="stacked-tag">Tailwind CSS</span>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Highly Prominent Resume CTA & Action Buttons -->
-              <div class="hero-cta-strip">
-                <a
-                  href="./assets/Aditya Jadhav Resume.pdf"
-                  download
-                  class="btn-prominent-resume"
-                >
-                  <ion-icon
-                    name="document-text-outline"
-                    style="font-size: 1.25rem"
-                  ></ion-icon>
-                  <span><strong>Download Resume</strong></span>
+            <!-- Card 2: Backend -->
+            <div class="stacked-capability-card" data-card-index="1">
+              <div class="stacked-card-inner">
+                <div class="stacked-card-header">
+                  <span class="stacked-card-num">02 // SYSTEMS &amp; APIS</span>
+                  <div class="stacked-card-icon-wrap">
+                    <img src="./assets/images/icon-design.svg" alt="Backend" />
+                  </div>
+                </div>
+                <div class="stacked-card-content">
+                  <h3 class="stacked-card-title">
+                    Backend Developement
+                  </h3>
+                  <p class="stacked-card-text">
+                    Architecting secure, scalable server-side systems and
+                    RESTful APIs using Node.js, Express.js, and MongoDB.
+                    Integrating JWT authentication, Docker containerization,
+                    and robust database models.
+                  </p>
+                  <div class="stacked-tech-tags">
+                    <span class="stacked-tag">Node.js</span>
+                    <span class="stacked-tag">Express.js</span>
+                    <span class="stacked-tag">MongoDB</span>
+                    <span class="stacked-tag">REST APIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Machine Learning -->
+            <div class="stacked-capability-card" data-card-index="3">
+              <div class="stacked-card-inner">
+                <div class="stacked-card-header">
+                  <span class="stacked-card-num">04 // INTELLIGENCE</span>
+                  <div class="stacked-card-icon-wrap">
+                    <img src="./assets/images/icon-photo.svg" alt="Machine Learning" />
+                  </div>
+                </div>
+                <div class="stacked-card-content">
+                  <h3 class="stacked-card-title">
+                    Machine Learning &amp; AI
+                  </h3>
+                  <p class="stacked-card-text">
+                    Applying machine learning algorithms and statistical
+                    models to analyze multidimensional datasets. Experienced
+                    in predictive modeling, MCP Orchestration, feature
+                    engineering, and model evaluation.
+                  </p>
+                  <div class="stacked-tech-tags">
+                    <span class="stacked-tag">Scikit-Learn</span>
+                    <span class="stacked-tag">MCP</span>
+                    <span class="stacked-tag">Classification</span>
+                    <span class="stacked-tag">Model Evaluation</span>
+                    <span class="stacked-tag">Python</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Data Analytics -->
+            <div class="stacked-capability-card" data-card-index="4">
+              <div class="stacked-card-inner">
+                <div class="stacked-card-header">
+                  <span class="stacked-card-num">05 // INSIGHTS</span>
+                  <div class="stacked-card-icon-wrap">
+                    <img src="./assets/images/icon-quote.svg" alt="Data Analytics" />
+                  </div>
+                </div>
+                <div class="stacked-card-content">
+                  <h3 class="stacked-card-title">
+                    Data Analytics &amp; Visualization
+                  </h3>
+                  <p class="stacked-card-text">
+                    Extracting actionable insights through structured
+                    exploratory data analysis (EDA), SQL querying, geospatial
+                    visual mapping, and multi-dashboard reporting with
+                    Tableau, Power BI, and Python Pandas.
+                  </p>
+                  <div class="stacked-tech-tags">
+                    <span class="stacked-tag">Tableau</span>
+                    <span class="stacked-tag">SQL</span>
+                    <span class="stacked-tag">Pandas / NumPy</span>
+                    <span class="stacked-tag">EDA</span>
+                    <span class="stacked-tag">Dashboards</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.caps-deck -->
+        </div>
+        <!-- /.caps-sticky-container -->
+      </div>
+      <!-- /.caps-scroll-area -->
+    </section>
+
+    <!-- ==================== 4. TECHNICAL SKILLS ==================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index-tag">03 // Technical Arsenal</span>
+          <h2 class="section-title">
+            Technical <span class="text-white-glow">Skills</span>
+          </h2>
+          <p class="section-subtitle">
+            Categorized breakdown of languages, frameworks, database systems,
+            and developer tooling.
+          </p>
+        </div>
+
+        <div class="skills-pods-grid">
+          <!-- Pod 1: Languages -->
+          <div class="dyson-card skill-category-pod-card">
+            <div class="pod-card-header">
+              <span class="pod-card-title">Languages</span>
+              <span class="pod-card-code">CAT // 01</span>
+            </div>
+            <div class="pod-badges-cluster">
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Python.svg" alt="Python" />
+                <span>Python</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/C++ (CPlusPlus).svg" alt="C++" />
+                <span>C++</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/C.svg" alt="C" />
+                <span>C</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/JavaScript.svg" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pod 2: Frontend & UI -->
+          <div class="dyson-card skill-category-pod-card">
+            <div class="pod-card-header">
+              <span class="pod-card-title">Frontend &amp; UI</span>
+              <span class="pod-card-code">CAT // 02</span>
+            </div>
+            <div class="pod-badges-cluster">
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/React.svg" alt="React" />
+                <span>React.js</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Next.js.svg" alt="Next.js" />
+                <span>Next.js</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Tailwind CSS.svg" alt="Tailwind CSS" />
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/HTML5.svg" alt="HTML5" />
+                <span>HTML5</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/CSS3.svg" alt="CSS3" />
+                <span>CSS3</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Bootstrap.svg" alt="Bootstrap" />
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pod 3: Backend & Database -->
+          <div class="dyson-card skill-category-pod-card">
+            <div class="pod-card-header">
+              <span class="pod-card-title">Backend &amp; Database</span>
+              <span class="pod-card-code">CAT // 03</span>
+            </div>
+            <div class="pod-badges-cluster">
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Node.js.svg" alt="Node.js" />
+                <span>Node.js</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Express.svg" alt="Express" />
+                <span>Express.js</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/MongoDB.svg" alt="MongoDB" />
+                <span>MongoDB</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/MySQL.svg" alt="MySQL" />
+                <span>MySQL</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Nodemon.svg" alt="Nodemon" />
+                <span>Nodemon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pod 4: Data, AI & Tooling -->
+          <div class="dyson-card skill-category-pod-card">
+            <div class="pod-card-header">
+              <span class="pod-card-title">Data, AI &amp; Tooling</span>
+              <span class="pod-card-code">CAT // 04</span>
+            </div>
+            <div class="pod-badges-cluster">
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/tableau-svgrepo-com.svg" alt="Tableau" />
+                <span>Tableau</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/excel-svgrepo-com.svg" alt="Excel" />
+                <span>Excel</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Jupyter.svg" alt="Jupyter" />
+                <span>Jupyter</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Git.svg" alt="Git" />
+                <span>Git</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/github-142-svgrepo-com.svg" alt="GitHub" />
+                <span>GitHub</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/postman-icon-svgrepo-com.svg" alt="Postman" />
+                <span>Postman</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Visual Studio Code (VS Code).svg" alt="VS Code" />
+                <span>VS Code</span>
+              </div>
+              <div class="compact-tech-badge">
+                <img src="./assets/images/skills/Arduino.svg" alt="Arduino" />
+                <span>Arduino</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. FEATURED PROJECTS ==================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index-tag">04 // Featured Deployments</span>
+          <h2 class="section-title">
+            Selected <span class="text-white-glow">Works</span>
+          </h2>
+          <p class="section-subtitle">
+            Full-stack software applications, algorithmic simulations, and
+            analytical research case studies.
+          </p>
+        </div>
+
+        <div class="projects-cinematic-grid">
+          <!-- 1. AlgoTradeSim -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-12.png" alt="AlgoTradeSim Backtesting Platform" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/AlgoTradeSim" target="_blank" rel="noopener noreferrer"
+                  class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a href="#projects" class="btn-hero-hollow">
-                  <span>View Projects</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">Full-Stack Development</span>
+                <span class="project-date-label">March 2026 — May 2026</span>
+              </div>
+              <h3 class="project-card-title">
+                AlgoTradeSim Backtesting Platform
+              </h3>
+              <p class="project-card-description">
+                A full-stack algorithmic trading backtesting platform enabling
+                users to write custom trading strategies, simulate them on
+                historical stock market data, and evaluate performance through
+                interactive charts, portfolio analytics, and key trading
+                metrics. Features Docker-based code execution.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">React</span>
+                <span class="tech-mini-pill">Node.js</span>
+                <span class="tech-mini-pill">Express</span>
+                <span class="tech-mini-pill">Docker</span>
+                <span class="tech-mini-pill">Charts</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/AlgoTradeSim" target="_blank" rel="noopener noreferrer"
+                  class="project-direct-link">
+                  <span>Source Code</span>
                   <ion-icon name="arrow-forward-outline"></ion-icon>
                 </a>
-                <a href="#contact" class="btn-hero-hollow">
-                  <span>Get in Touch</span>
-                  <ion-icon name="paper-plane-outline"></ion-icon>
+                <a href="https://github.com/adityajadhav5905/AlgoTradeSim" target="_blank" rel="noopener noreferrer"
+                  class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
                 </a>
-              </div>
-
-              <!-- Social Links -->
-              <div class="hero-social-row">
-                <a
-                  href="https://github.com/adityajadhav5905"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-circle-link"
-                  title="GitHub"
-                >
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/adityajadhav5905/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-circle-link"
-                  title="LinkedIn"
-                >
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://leetcode.com/u/adityajadhav5905/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-circle-link"
-                  title="LeetCode"
-                >
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.795l3.774-4.04 4.908-5.253a1.378 1.378 0 0 0-.974-2.339zm3.896 9.873a1.38 1.38 0 0 0-.97 2.355l2.67 2.67-2.67 2.67a1.38 1.38 0 1 0 1.952 1.952l3.647-3.647a1.38 1.38 0 0 0 0-1.952L18.35 10.27a1.375 1.375 0 0 0-.971-.397z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Full Size Character SVG Column with Interactive Purple Halo Canvas -->
-            <div class="hero-avatar-svg-column">
-              <div class="hero-avatar-svg-wrapper" id="hero-avatar-wrapper">
-                <div class="purple-halo-glow"></div>
-                <canvas
-                  id="purple-halo-canvas"
-                  class="purple-halo-canvas"
-                ></canvas>
-                <img
-                  src="./assets/images/avatar1.svg"
-                  alt="Aditya Jadhav"
-                  class="hero-avatar-svg-img"
-                  id="hero-avatar-img"
-                  loading="eager"
-                />
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ==================== 2. EDUCATION SECTION (SERIAL VERTICAL TIMELINE) ==================== -->
-      <section class="education-section" id="education">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-index-tag"
-              ><strong>Academic Pedigree</strong></span
-            >
-            <h2 class="section-title">
-              Education &amp; <span class="text-white-glow">Honors</span>
-            </h2>
-            <p class="section-subtitle">
-              Academic degrees, coursework, and competitive national scholarship
-              honors.
-            </p>
-          </div>
-
-          <div class="education-timeline-vertical">
-            <!-- 1. BE PICT Pune -->
-            <div class="edu-timeline-item">
-              <div class="edu-node-bullet"></div>
-              <div class="dyson-card edu-item-card">
-                <div class="edu-item-header">
-                  <span class="edu-level-tag">Bachelor of Engineering</span>
-                  <span class="edu-time-range">2023 — 2027</span>
-                </div>
-                <h3 class="edu-degree-title">
-                  B.E. in Electronics &amp; Telecommunication
-                </h3>
-                <div class="edu-school-name">
-                  SCTR's Pune Institute of Computer Technology (PICT), Pune
-                </div>
-                <div class="edu-score-pill">
-                  <ion-icon name="ribbon-outline"></ion-icon>
-                  <span>CGPA : <strong>8.56</strong></span>
-                </div>
-                <ul class="edu-highlights-list">
-                  <li>
-                    Core Coursework: Data Structures &amp; Algorithms, Database
-                    Management Systems, Computer Networks, Operating Systems,
-                    Digital Signal Processing.
-                  </li>
-                  <li>
-                    Actively building full-stack platforms, backtesting
-                    simulations, and geospatial data analytics tools.
-                  </li>
-                </ul>
+          <!-- 2. Pharmaceutical Inventory Management System -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-11.png" alt="Pharmaceutical Inventory Management System"
+                loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/PIMS-Pharmaceutical-Inventory-Management-System"
+                  target="_blank" rel="noopener noreferrer" class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
               </div>
             </div>
-
-            <!-- 2. HSC 12th Vidyamandir -->
-            <div class="edu-timeline-item">
-              <div class="edu-node-bullet"></div>
-              <div class="dyson-card edu-item-card">
-                <div class="edu-item-header">
-                  <span class="edu-level-tag"
-                    >Higher Secondary Certificate (HSC)</span
-                  >
-                  <span class="edu-time-range">2021 — 2023</span>
-                </div>
-                <h3 class="edu-degree-title">
-                  Vidyamandir Junior College, Miraj
-                </h3>
-                <div class="edu-school-name">
-                  Maharashtra State Board of Secondary and Higher Secondary
-                  Education
-                </div>
-                <div class="edu-score-pill">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-                  <span>HSC Percentage : <strong>72.83 %</strong></span>
-                </div>
-                <ul class="edu-highlights-list">
-                  <li>
-                    Science Stream specializing in Physics, Chemistry, and
-                    Advanced Mathematics.
-                  </li>
-                </ul>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">Full-Stack Development</span>
+                <span class="project-date-label">January 2026 — March 2026</span>
               </div>
-            </div>
-
-            <!-- 3. SSC 10th & NTSE Scholar Combined -->
-            <div class="edu-timeline-item">
-              <div class="edu-node-bullet"></div>
-              <div class="dyson-card edu-item-card">
-                <div class="edu-item-header">
-                  <span class="edu-level-tag"
-                    >Secondary School Certificate (SSC) &amp; NTSE Scholar</span
-                  >
-                  <span class="edu-time-range">2020 — 2021</span>
-                </div>
-                <h3 class="edu-degree-title">
-                  Deshbhakt Nathaji Lad Highschool, Sangli
-                </h3>
-                <div class="edu-school-name">
-                  Maharashtra State Board · National Talent Search Examination
-                  (NCERT)
-                </div>
-                <div class="edu-score-pill">
-                  <ion-icon name="trophy-outline"></ion-icon>
-                  <span
-                    >SSC Score : <strong>98.40 %</strong> · NTSE State Rank :
-                    <strong>17</strong> [Eligible for National
-                    Scholarship]</span
-                  >
-                </div>
-                <ul class="edu-highlights-list">
-                  <li>
-                    Awarded the prestigious National Talent Search (NTSE)
-                    Scholarship by NCERT, Government of India.
-                  </li>
-                  <li>
-                    Achieved 17th rank across Maharashtra state in NTSE with
-                    distinction performance in secondary state board
-                    examination.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== 3. CORE CAPABILITIES (STACKED CARDS DECK) ==================== -->
-      <section class="capabilities-section" id="capabilities">
-        <!-- Scroll area provides the scroll distance; sticky container pins the deck -->
-        <div class="caps-scroll-area" id="caps-scroll-area">
-          <div class="caps-sticky-container">
-            <!-- Title stays pinned while cards stack -->
-            <div class="caps-sticky-header">
-              <span class="section-index-tag">02 // Core Competencies</span>
-              <h2 class="section-title">
-                Core <span class="text-white-glow">Capabilities</span>
-              </h2>
-              <p class="section-subtitle">
-                Technical focus areas spanning full-stack development,
-                algorithmic computation, and analytical systems.
+              <h3 class="project-card-title">
+                Pharmaceutical Inventory System
+              </h3>
+              <p class="project-card-description">
+                A full-stack inventory management system designed for
+                pharmaceutical stores to efficiently manage medicines,
+                suppliers, stock levels, expiry dates, and sales. Includes
+                user authentication, real-time inventory tracking, and
+                low-stock alerts.
               </p>
-            </div>
-
-            <div class="caps-deck" id="caps-deck">
-              <!-- Card 1: Frontend -->
-              <div class="stacked-capability-card" data-card-index="0">
-                <div class="stacked-card-inner">
-                  <div class="stacked-card-header">
-                    <span class="stacked-card-num"
-                      >01 // UI &amp; INTERACTION</span
-                    >
-                    <div class="stacked-card-icon-wrap">
-                      <img src="./assets/images/icon-dev.svg" alt="Frontend" />
-                    </div>
-                  </div>
-                  <div class="stacked-card-content">
-                    <h3 class="stacked-card-title">Frontend Architecture</h3>
-                    <p class="stacked-card-text">
-                      Crafting modern, responsive, and performance-tuned user
-                      interfaces with React.js, Next.js, and Tailwind CSS.
-                      Implementing micro-interactions, fluid layouts, and state
-                      management for seamless digital experiences.
-                    </p>
-                    <div class="stacked-tech-tags">
-                      <span class="stacked-tag">React.js</span>
-                      <span class="stacked-tag">Next.js</span>
-                      <span class="stacked-tag">Tailwind CSS</span>
-                      <span class="stacked-tag">TypeScript</span>
-                      <span class="stacked-tag">Motion</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">MERN Stack</span>
+                <span class="tech-mini-pill">MongoDB</span>
+                <span class="tech-mini-pill">Express.js</span>
+                <span class="tech-mini-pill">React</span>
+                <span class="tech-mini-pill">JWT</span>
               </div>
-
-              <!-- Card 2: Backend -->
-              <div class="stacked-capability-card" data-card-index="1">
-                <div class="stacked-card-inner">
-                  <div class="stacked-card-header">
-                    <span class="stacked-card-num"
-                      >02 // SYSTEMS &amp; APIS</span
-                    >
-                    <div class="stacked-card-icon-wrap">
-                      <img
-                        src="./assets/images/icon-design.svg"
-                        alt="Backend"
-                      />
-                    </div>
-                  </div>
-                  <div class="stacked-card-content">
-                    <h3 class="stacked-card-title">
-                      Backend &amp; Cloud Systems
-                    </h3>
-                    <p class="stacked-card-text">
-                      Architecting secure, scalable server-side systems and
-                      RESTful APIs using Node.js, Express.js, and MongoDB.
-                      Integrating JWT authentication, Docker containerization,
-                      and robust database models.
-                    </p>
-                    <div class="stacked-tech-tags">
-                      <span class="stacked-tag">Node.js</span>
-                      <span class="stacked-tag">Express.js</span>
-                      <span class="stacked-tag">MongoDB</span>
-                      <span class="stacked-tag">REST APIs</span>
-                      <span class="stacked-tag">Docker</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3: DSA -->
-              <div class="stacked-capability-card" data-card-index="2">
-                <div class="stacked-card-inner">
-                  <div class="stacked-card-header">
-                    <span class="stacked-card-num">03 // COMPUTATION</span>
-                    <div class="stacked-card-icon-wrap">
-                      <img src="./assets/images/icon-app.svg" alt="DSA" />
-                    </div>
-                  </div>
-                  <div class="stacked-card-content">
-                    <h3 class="stacked-card-title">
-                      Algorithms &amp; Problem Solving
-                    </h3>
-                    <p class="stacked-card-text">
-                      Leveraging a deep foundation in Data Structures and
-                      Algorithms (C++ / Python) to solve complex computational
-                      problems, optimize runtime complexity, and write clean,
-                      scalable algorithmic code.
-                    </p>
-                    <div class="stacked-tech-tags">
-                      <span class="stacked-tag">C++</span>
-                      <span class="stacked-tag">Python</span>
-                      <span class="stacked-tag">Data Structures</span>
-                      <span class="stacked-tag">Algorithms</span>
-                      <span class="stacked-tag">LeetCode</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 4: Machine Learning -->
-              <div class="stacked-capability-card" data-card-index="3">
-                <div class="stacked-card-inner">
-                  <div class="stacked-card-header">
-                    <span class="stacked-card-num">04 // INTELLIGENCE</span>
-                    <div class="stacked-card-icon-wrap">
-                      <img
-                        src="./assets/images/icon-photo.svg"
-                        alt="Machine Learning"
-                      />
-                    </div>
-                  </div>
-                  <div class="stacked-card-content">
-                    <h3 class="stacked-card-title">
-                      Machine Learning &amp; AI
-                    </h3>
-                    <p class="stacked-card-text">
-                      Applying machine learning algorithms and statistical
-                      models to analyze multidimensional datasets. Experienced
-                      in predictive modeling, NLP text classification, feature
-                      engineering, and model evaluation.
-                    </p>
-                    <div class="stacked-tech-tags">
-                      <span class="stacked-tag">Scikit-Learn</span>
-                      <span class="stacked-tag">NLP</span>
-                      <span class="stacked-tag">Classification</span>
-                      <span class="stacked-tag">Model Evaluation</span>
-                      <span class="stacked-tag">Python</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 5: Data Analytics -->
-              <div class="stacked-capability-card" data-card-index="4">
-                <div class="stacked-card-inner">
-                  <div class="stacked-card-header">
-                    <span class="stacked-card-num">05 // INSIGHTS</span>
-                    <div class="stacked-card-icon-wrap">
-                      <img
-                        src="./assets/images/icon-quote.svg"
-                        alt="Data Analytics"
-                      />
-                    </div>
-                  </div>
-                  <div class="stacked-card-content">
-                    <h3 class="stacked-card-title">
-                      Data Analytics &amp; Visualization
-                    </h3>
-                    <p class="stacked-card-text">
-                      Extracting actionable insights through structured
-                      exploratory data analysis (EDA), SQL querying, geospatial
-                      visual mapping, and multi-dashboard reporting with
-                      Tableau, Power BI, and Python Pandas.
-                    </p>
-                    <div class="stacked-tech-tags">
-                      <span class="stacked-tag">Tableau</span>
-                      <span class="stacked-tag">SQL</span>
-                      <span class="stacked-tag">Pandas / NumPy</span>
-                      <span class="stacked-tag">Geospatial EDA</span>
-                      <span class="stacked-tag">Dashboards</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.caps-deck -->
-          </div>
-          <!-- /.caps-sticky-container -->
-        </div>
-        <!-- /.caps-scroll-area -->
-      </section>
-
-      <!-- ==================== 4. TECHNICAL SKILLS ==================== -->
-      <section class="skills-section" id="skills">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-index-tag">03 // Technical Arsenal</span>
-            <h2 class="section-title">
-              Technical <span class="text-white-glow">Skills</span>
-            </h2>
-            <p class="section-subtitle">
-              Categorized breakdown of languages, frameworks, database systems,
-              and developer tooling.
-            </p>
-          </div>
-
-          <div class="skills-pods-grid">
-            <!-- Pod 1: Languages -->
-            <div class="dyson-card skill-category-pod-card">
-              <div class="pod-card-header">
-                <span class="pod-card-title">Languages</span>
-                <span class="pod-card-code">CAT // 01</span>
-              </div>
-              <div class="pod-badges-cluster">
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Python.svg" alt="Python" />
-                  <span>Python</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/C++ (CPlusPlus).svg"
-                    alt="C++"
-                  />
-                  <span>C++</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/C.svg" alt="C" />
-                  <span>C</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/JavaScript.svg"
-                    alt="JavaScript"
-                  />
-                  <span>JavaScript</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/TypeScript.svg"
-                    alt="TypeScript"
-                  />
-                  <span>TypeScript</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pod 2: Frontend & UI -->
-            <div class="dyson-card skill-category-pod-card">
-              <div class="pod-card-header">
-                <span class="pod-card-title">Frontend &amp; UI</span>
-                <span class="pod-card-code">CAT // 02</span>
-              </div>
-              <div class="pod-badges-cluster">
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/React.svg" alt="React" />
-                  <span>React.js</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Next.js.svg" alt="Next.js" />
-                  <span>Next.js</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/Tailwind CSS.svg"
-                    alt="Tailwind CSS"
-                  />
-                  <span>Tailwind CSS</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/HTML5.svg" alt="HTML5" />
-                  <span>HTML5</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/CSS3.svg" alt="CSS3" />
-                  <span>CSS3</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/Bootstrap.svg"
-                    alt="Bootstrap"
-                  />
-                  <span>Bootstrap</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pod 3: Backend & Database -->
-            <div class="dyson-card skill-category-pod-card">
-              <div class="pod-card-header">
-                <span class="pod-card-title">Backend &amp; Database</span>
-                <span class="pod-card-code">CAT // 03</span>
-              </div>
-              <div class="pod-badges-cluster">
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Node.js.svg" alt="Node.js" />
-                  <span>Node.js</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Express.svg" alt="Express" />
-                  <span>Express.js</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/MongoDB.svg" alt="MongoDB" />
-                  <span>MongoDB</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/MySQL.svg" alt="MySQL" />
-                  <span>MySQL</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Nodemon.svg" alt="Nodemon" />
-                  <span>Nodemon</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pod 4: Data, AI & Tooling -->
-            <div class="dyson-card skill-category-pod-card">
-              <div class="pod-card-header">
-                <span class="pod-card-title">Data, AI &amp; Tooling</span>
-                <span class="pod-card-code">CAT // 04</span>
-              </div>
-              <div class="pod-badges-cluster">
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/tableau-svgrepo-com.svg"
-                    alt="Tableau"
-                  />
-                  <span>Tableau</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/excel-svgrepo-com.svg"
-                    alt="Excel"
-                  />
-                  <span>Excel</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Jupyter.svg" alt="Jupyter" />
-                  <span>Jupyter</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/docker-svgrepo-com.svg"
-                    alt="Docker"
-                  />
-                  <span>Docker</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Git.svg" alt="Git" />
-                  <span>Git</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/github-142-svgrepo-com.svg"
-                    alt="GitHub"
-                  />
-                  <span>GitHub</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/postman-icon-svgrepo-com.svg"
-                    alt="Postman"
-                  />
-                  <span>Postman</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img
-                    src="./assets/images/skills/Visual Studio Code (VS Code).svg"
-                    alt="VS Code"
-                  />
-                  <span>VS Code</span>
-                </div>
-                <div class="compact-tech-badge">
-                  <img src="./assets/images/skills/Arduino.svg" alt="Arduino" />
-                  <span>Arduino</span>
-                </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/PIMS-Pharmaceutical-Inventory-Management-System"
+                  target="_blank" rel="noopener noreferrer" class="project-direct-link">
+                  <span>Source Code</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/adityajadhav5905/PIMS-Pharmaceutical-Inventory-Management-System"
+                  target="_blank" rel="noopener noreferrer" class="social-circle-link"
+                  style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ==================== 5. FEATURED PROJECTS ==================== -->
-      <section class="projects-section" id="projects">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-index-tag">04 // Featured Deployments</span>
-            <h2 class="section-title">
-              Selected <span class="text-white-glow">Works</span>
-            </h2>
-            <p class="section-subtitle">
-              Full-stack software applications, algorithmic simulations, and
-              analytical research case studies.
-            </p>
-          </div>
-
-          <div class="projects-cinematic-grid">
-            <!-- 1. AlgoTradeSim -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-12.png"
-                  alt="AlgoTradeSim Backtesting Platform"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/AlgoTradeSim"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label"
-                    >Full-Stack Development</span
-                  >
-                  <span class="project-date-label">March 2026 — May 2026</span>
-                </div>
-                <h3 class="project-card-title">
-                  AlgoTradeSim Backtesting Platform
-                </h3>
-                <p class="project-card-description">
-                  A full-stack algorithmic trading backtesting platform enabling
-                  users to write custom trading strategies, simulate them on
-                  historical stock market data, and evaluate performance through
-                  interactive charts, portfolio analytics, and key trading
-                  metrics. Features Docker-based code execution.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">React</span>
-                  <span class="tech-mini-pill">Node.js</span>
-                  <span class="tech-mini-pill">Express</span>
-                  <span class="tech-mini-pill">Docker</span>
-                  <span class="tech-mini-pill">Charts</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/AlgoTradeSim"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/AlgoTradeSim"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
+          <!-- 3. COVID-19 Visual Analytics Using Tableau -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-13.png" alt="COVID-19 Visual Analytics Study" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="./assets/COVID-19 Visual Analytics Using Tableau.pdf" target="_blank" rel="noopener noreferrer"
+                  class="overlay-circle-button" title="View Research Study PDF">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </a>
               </div>
             </div>
-
-            <!-- 2. Pharmaceutical Inventory Management System -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-11.png"
-                  alt="Pharmaceutical Inventory Management System"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/PIMS-Pharmaceutical-Inventory-Management-System"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">Data Analytics</span>
+                <span class="project-date-label">Epidemiological Study</span>
               </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label"
-                    >Full-Stack Development</span
-                  >
-                  <span class="project-date-label"
-                    >January 2026 — March 2026</span
-                  >
-                </div>
-                <h3 class="project-card-title">
-                  Pharmaceutical Inventory System
-                </h3>
-                <p class="project-card-description">
-                  A full-stack inventory management system designed for
-                  pharmaceutical stores to efficiently manage medicines,
-                  suppliers, stock levels, expiry dates, and sales. Includes
-                  user authentication, real-time inventory tracking, and
-                  low-stock alerts.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">MERN Stack</span>
-                  <span class="tech-mini-pill">MongoDB</span>
-                  <span class="tech-mini-pill">Express.js</span>
-                  <span class="tech-mini-pill">React</span>
-                  <span class="tech-mini-pill">JWT</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/PIMS-Pharmaceutical-Inventory-Management-System"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/PIMS-Pharmaceutical-Inventory-Management-System"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
+              <h3 class="project-card-title">
+                COVID-19 Visual Analytics Using Tableau
+              </h3>
+              <p class="project-card-description">
+                A multi-dashboard study of India’s epidemiological data
+                analyzing multi-source datasets with Python for data cleaning,
+                normalization, and feature engineering, and Tableau for
+                regional hotspots, age-wise morbidity curves, and hospital
+                infrastructure correlations.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">Tableau</span>
+                <span class="tech-mini-pill">Python</span>
+                <span class="tech-mini-pill">Pandas</span>
+                <span class="tech-mini-pill">Geospatial EDA</span>
               </div>
-            </div>
-
-            <!-- 3. COVID-19 Visual Analytics Using Tableau -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-13.png"
-                  alt="COVID-19 Visual Analytics Study"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="./assets/COVID-19 Visual Analytics Using Tableau.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Research Study PDF"
-                  >
-                    <ion-icon name="document-text-outline"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label">Data Analytics</span>
-                  <span class="project-date-label">Epidemiological Study</span>
-                </div>
-                <h3 class="project-card-title">
-                  COVID-19 Visual Analytics Using Tableau
-                </h3>
-                <p class="project-card-description">
-                  A multi-dashboard study of India’s epidemiological data
-                  analyzing multi-source datasets with Python for data cleaning,
-                  normalization, and feature engineering, and Tableau for
-                  regional hotspots, age-wise morbidity curves, and hospital
-                  infrastructure correlations.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">Tableau</span>
-                  <span class="tech-mini-pill">Python</span>
-                  <span class="tech-mini-pill">Pandas</span>
-                  <span class="tech-mini-pill">Geospatial EDA</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="./assets/COVID-19 Visual Analytics Using Tableau.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>View Study (PDF)</span>
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="./assets/COVID-19 Visual Analytics Using Tableau.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="document-attach-outline"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 4. Real Estate -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-1.png"
-                  alt="Real Estate Platform"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/real-estate-listings"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label"
-                    >Full-Stack Development</span
-                  >
-                  <span class="project-date-label"
-                    >November 2025 — December 2025</span
-                  >
-                </div>
-                <h3 class="project-card-title">Real Estate Listing Platform</h3>
-                <p class="project-card-description">
-                  A full-stack real estate platform developed using the MERN
-                  stack, allowing users to effortlessly list, browse, and search
-                  for properties. Features secure user authentication for
-                  managing listings and advanced search filters.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">React</span>
-                  <span class="tech-mini-pill">Node.js</span>
-                  <span class="tech-mini-pill">MongoDB</span>
-                  <span class="tech-mini-pill">Tailwind</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/real-estate-listings"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/real-estate-listings"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 5. EduTrack Attendance System -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-9.png"
-                  alt="EduTrack Attendance System"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/attendance-monitoring"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label">Web Application</span>
-                  <span class="project-date-label"
-                    >September 2025 — October 2025</span
-                  >
-                </div>
-                <h3 class="project-card-title">EduTrack : Attendance System</h3>
-                <p class="project-card-description">
-                  A web-based attendance management frontend designed for
-                  colleges. Provides an intuitive interface for faculty to mark,
-                  track, and analyze student attendance across multiple batches
-                  and subjects with seamless backend connectivity.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">React.js</span>
-                  <span class="tech-mini-pill">Node.js</span>
-                  <span class="tech-mini-pill">Database</span>
-                  <span class="tech-mini-pill">Analytics</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/attendance-monitoring"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/attendance-monitoring"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 6. Portable Pollution Monitoring -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-2.jpg"
-                  alt="Portable Pollution Monitoring IoT"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label"
-                    >IoT &amp; Geospatial Visualization</span
-                  >
-                  <span class="project-date-label">March 2025 — May 2025</span>
-                </div>
-                <h3 class="project-heading">Portable Pollution Monitoring</h3>
-                <p class="project-card-description">
-                  An IoT device designed to capture hyper-local air quality on
-                  the go. Integrates multiple sensors (PM2.5, CO) and GPS to
-                  transmit real-time telemetry into a web dashboard with an
-                  interactive heatmap visualizer.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">IoT / Sensors</span>
-                  <span class="tech-mini-pill">GPS Telemetry</span>
-                  <span class="tech-mini-pill">Python Folium</span>
-                  <span class="tech-mini-pill">Heatmaps</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 7. Personal Portfolio Website -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-5.jpg"
-                  alt="Personal Portfolio"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/Personal-Portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label">HTML &amp; CSS</span>
-                  <span class="project-date-label"
-                    >February 2025 — March 2025</span
-                  >
-                </div>
-                <h3 class="project-card-title">Personal Portfolio Website</h3>
-                <p class="project-card-description">
-                  Crafted a visually engaging and fully responsive personal
-                  portfolio website from scratch using pure HTML5 and CSS3.
-                  Utilizes modern CSS techniques like Flexbox and Grid with
-                  optimized markup to effectively present projects.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">HTML5</span>
-                  <span class="tech-mini-pill">CSS3</span>
-                  <span class="tech-mini-pill">JavaScript</span>
-                  <span class="tech-mini-pill">Grid &amp; Flexbox</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/Personal-Portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/Personal-Portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 8. Amazon Clone -->
-            <div class="dyson-card project-cinematic-card">
-              <div class="project-image-parallax-wrap">
-                <img
-                  src="./assets/images/project-3.jpg"
-                  alt="Amazon Clone"
-                  loading="lazy"
-                />
-                <div class="project-hover-backdrop">
-                  <a
-                    href="https://github.com/adityajadhav5905/Amazon-Clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="overlay-circle-button"
-                    title="View Source Code"
-                  >
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-top">
-                  <span class="project-domain-label">HTML &amp; CSS</span>
-                  <span class="project-date-label">Frontend Clone</span>
-                </div>
-                <h3 class="project-card-title">Amazon Clone</h3>
-                <p class="project-card-description">
-                  A frontend replica of the Amazon e-commerce interface
-                  replicating navigation headers, product carousels, responsive
-                  grid layouts, and cart sections using modular CSS and semantic
-                  HTML5.
-                </p>
-                <div class="project-tech-pills-row">
-                  <span class="tech-mini-pill">HTML5</span>
-                  <span class="tech-mini-pill">CSS3</span>
-                  <span class="tech-mini-pill">UI Design</span>
-                </div>
-                <div class="project-card-footer">
-                  <a
-                    href="https://github.com/adityajadhav5905/Amazon-Clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-direct-link"
-                  >
-                    <span>Source Code</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
-                  <a
-                    href="https://github.com/adityajadhav5905/Amazon-Clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-circle-link"
-                    style="width: 32px; height: 32px"
-                  >
-                    <ion-icon
-                      name="logo-github"
-                      style="font-size: 1rem"
-                    ></ion-icon>
-                  </a>
-                </div>
+              <div class="project-card-footer">
+                <a href="./assets/COVID-19 Visual Analytics Using Tableau.pdf" target="_blank" rel="noopener noreferrer"
+                  class="project-direct-link">
+                  <span>View Study (PDF)</span>
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+                <a href="./assets/COVID-19 Visual Analytics Using Tableau.pdf" target="_blank" rel="noopener noreferrer"
+                  class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="document-attach-outline" style="font-size: 1rem"></ion-icon>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ==================== 6. GET IN TOUCH (TRANSMISSION FORM) ==================== -->
-      <section class="contact-section" id="contact">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-index-tag">05 // Contact</span>
-            <h2 class="section-title">
-              Get in <span class="text-white-glow">Touch</span>
-            </h2>
-            <p class="section-subtitle">
-              Send a message for full-stack engineering collaborations, data
-              analysis projects, or opportunities.
-            </p>
-          </div>
-
-          <div class="dyson-card transmission-form-container">
-            <form
-              action="https://formspree.io/f/xanbanvj"
-              target="_blank"
-              method="POST"
-            >
-              <div class="form-grid-two-col">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-input-field"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input-field"
-                  placeholder="Your Email Address"
-                  required
-                />
+          <!-- 4. Real Estate -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-1.png" alt="Real Estate Platform" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/real-estate-listings" target="_blank"
+                  rel="noopener noreferrer" class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
               </div>
-
-              <input
-                type="text"
-                name="subject"
-                class="form-input-field"
-                placeholder="Subject / Opportunity"
-                style="margin-bottom: 16px"
-                required
-              />
-
-              <textarea
-                name="message"
-                class="form-input-field"
-                placeholder="Your Message..."
-                required
-              ></textarea>
-
-              <button type="submit" class="btn-transmit-submit">
-                <ion-icon
-                  name="paper-plane-outline"
-                  style="font-size: 1.15rem"
-                ></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">Full-Stack Development</span>
+                <span class="project-date-label">November 2025 — December 2025</span>
+              </div>
+              <h3 class="project-card-title">Real Estate Listing Platform</h3>
+              <p class="project-card-description">
+                A full-stack real estate platform developed using the MERN
+                stack, allowing users to effortlessly list, browse, and search
+                for properties. Features secure user authentication for
+                managing listings and advanced search filters.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">React</span>
+                <span class="tech-mini-pill">Node.js</span>
+                <span class="tech-mini-pill">MongoDB</span>
+                <span class="tech-mini-pill">Tailwind</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/real-estate-listings" target="_blank"
+                  rel="noopener noreferrer" class="project-direct-link">
+                  <span>Source Code</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/adityajadhav5905/real-estate-listings" target="_blank"
+                  rel="noopener noreferrer" class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="studio-footer">
-      <div class="container">
-        <div class="footer-inner-flex">
-          <p class="footer-copyright">
-            &copy; 2026 <strong>Aditya Jadhav</strong>. Engineered with
-            precision.
-          </p>
+          <!-- 5. EduTrack Attendance System -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-9.png" alt="EduTrack Attendance System" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/attendance-monitoring" target="_blank"
+                  rel="noopener noreferrer" class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">Web Application</span>
+                <span class="project-date-label">September 2025 — October 2025</span>
+              </div>
+              <h3 class="project-card-title">EduTrack : Attendance System</h3>
+              <p class="project-card-description">
+                A web-based attendance management frontend designed for
+                colleges. Provides an intuitive interface for faculty to mark,
+                track, and analyze student attendance across multiple batches
+                and subjects with seamless backend connectivity.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">React.js</span>
+                <span class="tech-mini-pill">Node.js</span>
+                <span class="tech-mini-pill">Database</span>
+                <span class="tech-mini-pill">Analytics</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/attendance-monitoring" target="_blank"
+                  rel="noopener noreferrer" class="project-direct-link">
+                  <span>Source Code</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/adityajadhav5905/attendance-monitoring" target="_blank"
+                  rel="noopener noreferrer" class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <div class="hero-social-row">
-            <a
-              href="https://github.com/adityajadhav5905"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-circle-link"
-              title="GitHub"
-            >
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/adityajadhav5905/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-circle-link"
-              title="LinkedIn"
-            >
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://leetcode.com/u/adityajadhav5905/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-circle-link"
-              title="LeetCode"
-            >
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.795l3.774-4.04 4.908-5.253a1.378 1.378 0 0 0-.974-2.339zm3.896 9.873a1.38 1.38 0 0 0-.97 2.355l2.67 2.67-2.67 2.67a1.38 1.38 0 1 0 1.952 1.952l3.647-3.647a1.38 1.38 0 0 0 0-1.952L18.35 10.27a1.375 1.375 0 0 0-.971-.397z"
-                />
-              </svg>
-            </a>
+          <!-- 6. Portable Pollution Monitoring -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-2.jpg" alt="Portable Pollution Monitoring IoT" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" target="_blank"
+                  rel="noopener noreferrer" class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">IoT &amp; Geospatial Visualization</span>
+                <span class="project-date-label">March 2025 — May 2025</span>
+              </div>
+              <h3 class="project-heading">Portable Pollution Monitoring</h3>
+              <p class="project-card-description">
+                An IoT device designed to capture hyper-local air quality on
+                the go. Integrates multiple sensors (PM2.5, CO) and GPS to
+                transmit real-time telemetry into a web dashboard with an
+                interactive heatmap visualizer.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">IoT / Sensors</span>
+                <span class="tech-mini-pill">GPS Telemetry</span>
+                <span class="tech-mini-pill">Python Folium</span>
+                <span class="tech-mini-pill">Heatmaps</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" target="_blank"
+                  rel="noopener noreferrer" class="project-direct-link">
+                  <span>Source Code</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/adityajadhav5905/SE_PBL_Pollution_Monitoring" target="_blank"
+                  rel="noopener noreferrer" class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Personal Portfolio Website -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-5.jpg" alt="Personal Portfolio" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/Personal-Portfolio" target="_blank"
+                  rel="noopener noreferrer" class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">HTML &amp; CSS</span>
+                <span class="project-date-label">February 2025 — March 2025</span>
+              </div>
+              <h3 class="project-card-title">Personal Portfolio Website</h3>
+              <p class="project-card-description">
+                Crafted a visually engaging and fully responsive personal
+                portfolio website from scratch using pure HTML5 and CSS3.
+                Utilizes modern CSS techniques like Flexbox and Grid with
+                optimized markup to effectively present projects.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">HTML5</span>
+                <span class="tech-mini-pill">CSS3</span>
+                <span class="tech-mini-pill">JavaScript</span>
+                <span class="tech-mini-pill">Grid &amp; Flexbox</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/Personal-Portfolio" target="_blank"
+                  rel="noopener noreferrer" class="project-direct-link">
+                  <span>Source Code</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/adityajadhav5905/Personal-Portfolio" target="_blank"
+                  rel="noopener noreferrer" class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Amazon Clone -->
+          <div class="dyson-card project-cinematic-card">
+            <div class="project-image-parallax-wrap">
+              <img src="./assets/images/project-3.jpg" alt="Amazon Clone" loading="lazy" />
+              <div class="project-hover-backdrop">
+                <a href="https://github.com/adityajadhav5905/Amazon-Clone" target="_blank" rel="noopener noreferrer"
+                  class="overlay-circle-button" title="View Source Code">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-domain-label">HTML &amp; CSS</span>
+                <span class="project-date-label">Frontend Clone</span>
+              </div>
+              <h3 class="project-card-title">Amazon Clone</h3>
+              <p class="project-card-description">
+                A frontend replica of the Amazon e-commerce interface
+                replicating navigation headers, product carousels, responsive
+                grid layouts, and cart sections using modular CSS and semantic
+                HTML5.
+              </p>
+              <div class="project-tech-pills-row">
+                <span class="tech-mini-pill">HTML5</span>
+                <span class="tech-mini-pill">CSS3</span>
+                <span class="tech-mini-pill">UI Design</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/adityajadhav5905/Amazon-Clone" target="_blank" rel="noopener noreferrer"
+                  class="project-direct-link">
+                  <span>Source Code</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/adityajadhav5905/Amazon-Clone" target="_blank" rel="noopener noreferrer"
+                  class="social-circle-link" style="width: 32px; height: 32px">
+                  <ion-icon name="logo-github" style="font-size: 1rem"></ion-icon>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Floating Back to Top Button -->
-    <button
-      id="back-to-top"
-      class="back-to-top-button"
-      aria-label="Back to Top"
-    >
-      <ion-icon name="arrow-up-outline"></ion-icon>
-    </button>
+    <!-- ==================== 6. GET IN TOUCH (TRANSMISSION FORM) ==================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index-tag">05 // Contact</span>
+          <h2 class="section-title">
+            Get in <span class="text-white-glow">Touch</span>
+          </h2>
+          <p class="section-subtitle">
+            Send a message for full-stack engineering collaborations, data
+            analysis projects, or opportunities.
+          </p>
+        </div>
 
-    <!-- Interactive JavaScript Engine -->
-    <script src="script.js"></script>
-  </body>
+        <div class="dyson-card transmission-form-container">
+          <form action="https://formspree.io/f/xanbanvj" target="_blank" method="POST">
+            <div class="form-grid-two-col">
+              <input type="text" name="name" class="form-input-field" placeholder="Your Name" required />
+              <input type="email" name="email" class="form-input-field" placeholder="Your Email Address" required />
+            </div>
+
+            <input type="text" name="subject" class="form-input-field" placeholder="Subject / Opportunity"
+              style="margin-bottom: 16px" required />
+
+            <textarea name="message" class="form-input-field" placeholder="Your Message..." required></textarea>
+
+            <button type="submit" class="btn-transmit-submit">
+              <ion-icon name="paper-plane-outline" style="font-size: 1.15rem"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="studio-footer">
+    <div class="container">
+      <div class="footer-inner-flex">
+        <p class="footer-copyright">
+          &copy; 2026 <strong>Aditya Jadhav</strong>. Engineered with
+          precision.
+        </p>
+
+        <div class="hero-social-row">
+          <a href="https://github.com/adityajadhav5905" target="_blank" rel="noopener noreferrer"
+            class="social-circle-link" title="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/adityajadhav5905/" target="_blank" rel="noopener noreferrer"
+            class="social-circle-link" title="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="https://leetcode.com/u/adityajadhav5905/" target="_blank" rel="noopener noreferrer"
+            class="social-circle-link" title="LeetCode">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.795l3.774-4.04 4.908-5.253a1.378 1.378 0 0 0-.974-2.339zm3.896 9.873a1.38 1.38 0 0 0-.97 2.355l2.67 2.67-2.67 2.67a1.38 1.38 0 1 0 1.952 1.952l3.647-3.647a1.38 1.38 0 0 0 0-1.952L18.35 10.27a1.375 1.375 0 0 0-.971-.397z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-button" aria-label="Back to Top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+
 </html>
